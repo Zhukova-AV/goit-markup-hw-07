@@ -145,7 +145,7 @@ p {
     color: var(--accent-color);
 }
 
-.auth-nav {
+.header__auth-nav {
     display: flex;
     margin-left: auto;
 }
@@ -266,23 +266,24 @@ p {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.backdrop--is-hidden {
     opacity: 0;
     pointer-events: none;
 }
 
 .modal {
-    position: absolute;
+    position: relative;
+    /* position: absolute;
     top: 85%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    /* transform: scale(1); */
+    transform: translate(-50%, -50%) scale(1); */
+
     width: 528px;
     height: 581px;
     background-color: var(--text-color-white);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden .modal {
+.backdrop--is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.6);
 }
 
@@ -310,7 +311,7 @@ p {
     fill: var(--accent-color);
 }
 
-.form {
+.modal__form {
     display: block;
     margin: 0 auto;
     padding-top: 40px;
@@ -318,7 +319,7 @@ p {
     text-align: start;
 }
 
-.form-title {
+.modal__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -326,7 +327,7 @@ p {
     margin-bottom: 12px;
 }
 
-.form__label {
+.modal__label {
     position: relative;
     display: block;
     align-items: center;
@@ -339,7 +340,7 @@ p {
     color: var(--text-color-light);
 }
 
-.form__input {
+.modal__input {
     width: 100%;
     /* margin: 0;
     margin-bottom: 10px;
@@ -361,30 +362,30 @@ p {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__label:hover .form__input,
-.form__label:focus .form__input {
+.modal__label:hover .modal__input,
+.modal__label:focus .modal__input {
     border: 1px solid var(--accent-color);
     fill: var(--accent-color);
     outline: none;
 }
 
-.form__label:hover .form__icon,
-.form__label:focus .form__icon {
+.modal__label:hover .modal__icon,
+.modal__label:focus .modal__icon {
     fill: var(--accent-color);
 }
 
-.form__input-wrapper {
+.modal__input-wrapper {
     position: relative;
     display: block;
     margin: 0;
     margin-bottom: 10px;
     margin-top: 4px;
 }
-.form__input-wrapper.last-chld {
+.modal__input-wrapper.last-chld {
     margin-bottom: 25px;
 }
 
-.form__icon {
+.modal__icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -393,7 +394,7 @@ p {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__textarea {
+.modal__textarea {
     height: 120px;
     resize: none;
     padding: 12px 16px;
@@ -401,7 +402,7 @@ p {
     margin-bottom: 25px;
 }
 
-.form__textarea::placeholder {
+.modal__textarea::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -410,19 +411,19 @@ p {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form__label--check {
+.modal__label--check {
     padding-left: 36px;
     margin-bottom: 30px;
 }
 
-.form__input--check {
+.modal__input--check {
     position: absolute;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
-.form__icon-check {
+.modal__icon-check {
     position: absolute;
     align-items: center;
     width: 16px;
@@ -436,13 +437,13 @@ p {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__input--check:checked + .form__icon-check {
+.modal__input--check:checked + .modal__icon-check {
     background-color: var(--accent-color);
     border: none;
     background-size: cover;
 }
 
-.form__text-agree {
+.modal__text-agree {
     color: var(--accent-color);
 }
 
@@ -472,11 +473,16 @@ p {
     padding-bottom: 0;
 }
 
-.box__title {
+.feature__title,
+.about__title {
     font-size: inherit;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+}
+
+.about__title {
+    color: var(--text-color-white);
 }
 
 .feature__text {
@@ -657,7 +663,7 @@ p {
     align-items: baseline;
     padding: 60px 0;
 }
-.address {
+.footer__address {
     margin-top: 20px;
     font-style: normal;
     line-height: 1.71;
@@ -709,7 +715,7 @@ p {
     align-items: flex-start;
 }
 
-.sign-form {
+.footer__sign-form {
     margin-left: 93px;
 }
 .sign-form__icon {
