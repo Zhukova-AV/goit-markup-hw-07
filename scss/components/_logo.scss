@@ -4,15 +4,16 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+}
 
-    &__web {
-        color: $accent-color;
-    }
-    &__studio {
-        color: $text-color-black;
-    }
+.logo__web {
+    color: $accent-color;
+}
 
-    &__studio--footer {
-        color: $text-color-white;
-    }
+.logo__studio {
+    color: $text-color-black;
+}
+
+.logo__studio--footer {
+    color: $text-color-white;
 }

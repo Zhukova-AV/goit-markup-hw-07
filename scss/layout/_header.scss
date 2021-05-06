@@ -1,17 +1,17 @@
 .header {
     border-bottom: 1px solid #ececec;
+}
 
-    &__container {
-        display: flex;
-        align-items: center;
-    }
+.header__container {
+    display: flex;
+    align-items: center;
+}
 
-    &__logo {
-        margin-right: 93px;
-    }
+.header__logo {
+    margin-right: 93px;
+}
 
-    &__auth-nav {
-        display: flex;
-        margin-left: auto;
-    }
+.header__auth-nav {
+    display: flex;
+    margin-left: auto;
 }

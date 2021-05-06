@@ -50,10 +50,19 @@ p {
     &:nth-child(2n + 4) {
         background-color: $bgc-color-secondary;
     }
+}
 
-    &__no-padding {
-        padding-bottom: 0;
-    }
+.section__no-padding {
+    padding-bottom: 0;
+}
+
+.section__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
 .navigation__link,
