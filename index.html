@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./js/modal.js">
        
 </head>
@@ -20,8 +20,9 @@
 
     <header class="header"> 
         <div class="container header__container">
+            <a href="#" class="logo header__logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
             <nav class="navigation">
-                <a href="#" class="logo header__logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+                
                 <ul class="navigation__list list">
                     <li class="navigation__item">
                         <a href="./index.html" class="navigation__link navigation__link--current">Студия</a>
@@ -133,7 +134,7 @@
                                     <use href="./images/sprite.svg#icon-antenna"></use>
                                 </svg>
                             </div>
-                            <h3 class="feature__title">Внимание к деталям</h3>
+                            <h3 class="box-title">Внимание к деталям</h3>
                             <p class="feature__text">Идейные соображения, а также начало повседневной работы по формированию позиции</p>
                         </li>
                         <li class="feature__item">
@@ -142,7 +143,7 @@
                                     <use href="./images/sprite.svg#icon-clock"></use>
                                 </svg>
                             </div>
-                            <h3 class="feature__title">Пунктуальность</h3>
+                            <h3 class="box-title">Пунктуальность</h3>
                             <p class="feature__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
                         <li class="feature__item">
@@ -151,7 +152,7 @@
                                     <use href="./images/sprite.svg#icon-diagram"></use>
                                 </svg>
                             </div>
-                            <h3 class="feature__title">Планирование</h3>
+                            <h3 class="box-title">Планирование</h3>
                             <p class="feature__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
                         <li class="feature__item">
@@ -160,7 +161,7 @@
                                     <use href="./images/sprite.svg#icon-astronaut"></use>
                                 </svg>
                             </div>
-                            <h3 class="feature__title">Современные технологии</h3>
+                            <h3 class="box-title">Современные технологии</h3>
                             <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </li>
                     </ul>
@@ -177,7 +178,7 @@
                         <div class="about__box">
                             <img class="about__img" src="./images/img-main/box1.jpg" alt="Работа на планшете с клавиатурой" width="370" height="294">
                             <div class="about__table">
-                                <h3 class="about__title">Десктопные приложения</h3>
+                                <h3 class="box-title box-title--about">Десктопные приложения</h3>
                             </div>
                         </div>
                     </li>
@@ -185,7 +186,7 @@
                         <div class="about__box">
                             <img class="about__img" src="./images/img-main/box2.jpg" alt="Разработка мобильных приложений" width="370" height="294">
                                 <div class="about__table">
-                                <h3 class="about__title">Мобильные приложения</h3>
+                                <h3 class="box-title box-title--about">Мобильные приложения</h3>
                             </div>
                         </div>
                     </li>
@@ -193,7 +194,7 @@
                         <div class="about__box">
                         <img class="about__img" src="./images/img-main/box3.jpg" alt="Работа на графическом планшете" width="370" height="294">
                                 <div class="about__table">
-                                <h3 class="about__title">Дизайнерские решения</h3>
+                                <h3 class="box-title box-title--about">Дизайнерские решения</h3>
                             </div>
                         </div>
                     </li>
@@ -430,7 +431,7 @@
             </address>
         </div>
         <div class="footer-box__social">
-            <p class="footer-box__title">Присоединяйтесь</p>
+            <p class="box-title box-title--footer">Присоединяйтесь</p>
             <ul class="social-list list">
                 <li class="social-list__item social-list__item--footer">
                     <a class="social-list__link social-list__link--footer" href="" aria-label="Иконка Инстаграм">
@@ -464,7 +465,7 @@
 
         </div>
         <div class="sign-form footer__sign-form">
-            <p class="sign-form__title">Подпишитесь на рассылку</p>
+            <p class="box-title box-title--footer">Подпишитесь на рассылку</p>
             <form>
                 <input class="sign-form__input" type="email" name="email" placeholder="E-mail">
                 <button type="submit" class="btn btn__primary">Подписаться

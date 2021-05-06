@@ -1,0 +1,27 @@
+.feature {
+    display: flex;
+
+    &__item {
+        width: 270px;
+
+        & + & {
+            margin-left: 30px;
+            display: block;
+        }
+    }
+    &__text {
+        margin-top: 10px;
+        color: $text-color-light;
+        line-height: 1.71;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 270px;
+        height: 120px;
+        background-color: $bgc-color-secondary;
+    }
+}
