@@ -194,11 +194,11 @@ p {
   fill: #ffffff;
 }
 
-.social-list__icon--footer {
+.social-list__item--footer {
   fill: #ffffff;
 }
 
-.social-list__icon--footer:not(:last-child) {
+.social-list__item--footer:not(:last-child) {
   margin-right: 10px;
 }
 
