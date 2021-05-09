@@ -1,3 +1,19 @@
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.box-title {
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -54,46 +70,6 @@ p {
 
 .section__no-padding {
   padding-bottom: 0;
-}
-
-.section__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
-.navigation__link,
-.auth-nav__link {
-  display: inline-flex;
-  align-items: center;
-  background-size: contain;
-  padding: 32px 0;
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.box-title {
-  font-size: inherit;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.box-title--about {
-  color: #ffffff;
-}
-
-.box-title--footer {
-  color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .logo {
@@ -216,8 +192,21 @@ p {
   margin-left: 50px;
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
+.navigation__link {
+  display: inline-flex;
+  align-items: center;
+  background-size: contain;
+  padding: 32px 0;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
 }
 
@@ -239,6 +228,20 @@ p {
 
 .auth-nav__item + .auth-nav__item {
   margin-left: 30px;
+}
+
+.auth-nav__link {
+  display: inline-flex;
+  align-items: center;
+  background-size: contain;
+  padding: 32px 0;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav__link:hover, .auth-nav__link:focus {
@@ -275,7 +278,7 @@ p {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop--is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -542,6 +545,10 @@ p {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.box-title--about {
+  color: #ffffff;
+}
+
 .team {
   display: flex;
   justify-content: space-between;
@@ -653,6 +660,11 @@ p {
 
 .address__item {
   margin-top: 9px;
+}
+
+.box-title--footer {
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .sign-form__icon {

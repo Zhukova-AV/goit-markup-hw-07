@@ -19,6 +19,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+// body.modal-open {
+//     overflow: hidden;
+// }
+
 h1,
 h2,
 h3,
@@ -54,45 +58,4 @@ p {
 
 .section__no-padding {
     padding-bottom: 0;
-}
-
-.section__title {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-}
-
-.navigation__link,
-.auth-nav__link {
-    display: inline-flex;
-    align-items: center;
-    background-size: contain;
-    padding: 32px 0;
-    color: $text-color-light;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.box-title {
-    font-size: inherit;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    &--about {
-        color: $text-color-white;
-    }
-
-    &--footer {
-        color: $text-color-white;
-        margin-bottom: 20px;
-    }
 }
